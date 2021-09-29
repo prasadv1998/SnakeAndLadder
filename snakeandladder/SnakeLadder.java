@@ -2,7 +2,8 @@ package snakeandladder;
 
 public class SnakeLadder {
 	public static void main(String[] args) {
-		int playerPosition = 0;
-		System.out.println("Player starting position:" +playerPosition);
+		System.out.println("Player at position 0");
+		int dice = (int) (Math.random() *6) +1;
+		System.out.println("Dice number is:" +dice);
 	}
 }
