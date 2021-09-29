@@ -6,10 +6,12 @@ public class SnakeLadder {
 		System.out.println("Player at position 0");
 		int ladder = 1;
 		int snake = 2;
+		int dieRoll =0;
 		int presentPosition = 0;
 		System.out.println("At start the position:" +presentPosition);
 		while (presentPosition < 100 ) 
 		{
+			dieRoll++;
 			int dice = (int) (Math.random() *6 + 1);
 		System.out.println("Dice number is:" +dice);
 		int option = (int) (Math.random() *3);
@@ -34,6 +36,7 @@ public class SnakeLadder {
 			{
 			System.out.println("You are at position:" +presentPosition);
 			}
+		System.out.println("The number of times die rolled to win the game:" + dieRoll);
 		}
 	}
 }
